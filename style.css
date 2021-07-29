@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto+Slab:wght@200&display=swap');
+
+
+/*
+
+
+
+
+*/
+* {
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 2.7s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    font-family: 'Poppins', sans-serif;
+    font-variant: normal;
+    font-style: italic;
+    filter: invert(100%);
+}
+
+#toggle {
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+}
+
+
+body {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    font-family: 'Poppins', sans-serif;
+    font-variant: normal;
+    font-size: 20px;
+    font-style: italic;
+    background-image: none;
+    border-color: greenyellow;
+    background-color: gold;
+    scrollbar-color: blue;
+    border-color: deepskyblue;
+    font-stretch: ultra-expanded;
+    margin: 30px;
+}
+p {
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px blue;
+}
+
+div {
+    border-color: firebrick;
+    border: 20px
+}
+img {
+    width: 245px;
+    height: 150px;
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+}
+
+#video1 {
+    height: 300px;
+    width: 300px;
+}
+.main {
+}
+
+.flag {
+    background-color: white;
+    height: 300px;
+    width: 600px;
+}
+
+#red {
+    background: red;
+    height: 50px;
+    width: 600px;
+}
+#orange {
+    background: orange;
+    height: 50px;
+    width: 600px;
+}
+#yellow {
+    background: yellow;
+    height: 50px;
+    width: 600px;
+}
+#green {
+    background: green;
+    height: 50px;
+    width: 600px;
+}
+#blue {
+    background: blue;
+    height: 50px;
+    width: 600px;
+}
+#purple {
+    background: purple;
+    height: 50px;
+    width: 600px;
+}
+
+.american_flag {
+    background-color: white;
+    height: 700px;
+    width: 900px;
+}
+
+#white {
+    height: 65px;
+    width: 900px;
+    background: white;
+}
+#red {
+    height: 65px;
+    width: 900px;
+    background: red;
+}
+
+#color:hover{
+    background: darkorange;
+}
+
+@-webkit-keyframes shake {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.main:hover {
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 2.4s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.main {
+    display:inline-block;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}

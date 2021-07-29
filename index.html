@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon">
+    <title>Document</title>
+</head>
+<body class="main" id="color">
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+         document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+
+    <div>
+        <h1>Welcome to my sub-website!</h1>
+        <p>This is a HTML site.</p>
+    <div>
+        <h4>This is my first website on here!</h4>
+        <p>Custom made!</p>
+    </div>
+    <a href="http://www.youtube.com/watch?v=iik25wqIuFo">
+        <button>Visit Google</button>
+    </a>
+
+    <button onclick="changeParagraph()">
+        dataClick
+    </button>
+
+    <p id="change">
+        
+    </p>
+
+    <script type="text/javascript">
+        document.getElementById('color').style.cursor = 'none';
+    </script>    
+
+    <div id="list">
+        <ul>
+            <li>combat</li>
+            <li>storage</li>
+            <li>chest</li>
+            <li>ninja</li>
+            <li>code</li>
+            
+        </ul>
+        <ol>
+            <li>combat</li>
+            <li>storage</li>
+            <li>chest</li>
+            <li>ninja</li>
+            <li>code</li>
+        </ol>
+    </div> 
+
+    <iframe id="video1" width="600" height="300" src="https://www.youtube.com/embed/wzvZjQkvOrA" title="YouTubePlayer" frameborder="0" allow="encrypted-media;" allowfullscreen></iframe>
+    <img src ="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="flowers_broken-loaderror">
+    <small>Image from images.pexels.com</small>
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href="http://www.leafspark.org">
+        <button>leafspark.org</button>
+    </a>       
+
+    <a href="ms-calculator:\\">
+        <button>Calculator</button>
+    </a>
+
+    <a href="ms-paint:\\">
+        <button>Paint</button>
+    </a>
+
+    <a href="mailto:\\">
+        <button>Mail</button>
+    </a>
+
+    <a href="ms-store:\\">
+        <button>Store</button>
+    </a>
+
+    <button onclick="f1()" href=http://www.leafspark.org type="button">Leaf</button>
+    <link rel="stylesheet" href="style.css">
+    <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"/>
+
+
+    <button onClick="gifFunc()">
+        click for gif
+    </button>
+
+    <div id="gif" style="display: none;">
+        <iframe src="https://giphy.com/embed/MrxXgkRE71uJH7JLzp" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jump-yay-studioneuhaus-MrxXgkRE71uJH7JLzp"></a></p>
+    </div>
+
+    <div id="gifcat" style="display: none;">
+        <iframe src="https://giphy.com/embed/VbnUQpnihPSIgIXuZv" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/computer-cat-wearing-glasses-VbnUQpnihPSIgIXuZv"></a></p>
+    </div>
+    
+    <button onClick="gifFuncCat()">
+        cat gif
+    </button>
+
+    <div id="time"></div>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function f1() {
+            alert("Hello!")
+        }
+
+        function gifFunc() {
+            var x = document.getElementById("gif")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        //comment
+        function gifFuncCat() {
+            var data = document.getElementById("gifcat")
+            if (data.style.display === "none") {
+                data.style.display = "block";
+            } else {
+                data.style.display = "none";
+            }
+        }
+    </script>
+    
+    <div class="flag">
+        <div id="red"></div>
+        <div id="orange"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="purple"></div>
+    </div>
+
+    <div class="american_flag">
+        <div id="star_img">
+            <img id="star" src="https://www.crwflags.com/fotw/images/u/us~1912s.gif" alt="Star image">
+        </div>
+        <div id="white"></div>
+        <div id="red"></div>
+        <div id="white"></div>
+        <div id="red"></div>
+        <div id="white"></div>
+        <div id="red"></div>
+        <div id="white"></div>
+    </div>
+
+    <!-- <audio controls autoplay>
+        <source src="resources/background.mp3" type="audio/mp3">
+    </audio> -->
+
+    <!-- <audio src="resources/background.mp3" autoplay></audio> -->
+
+    <!-- <audio id="musicplayer" autoplay> 
+        <source src="./resources/background.mp3">
+    </audio> -->
+
+    <!-- <audio src="./resources/background.mp3" autoplay onplay="handleFirstPlay(event)"></audio> -->
+
+    <audio autoplay>
+        <source src="./resources/background.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.onkeydown = function (e) {
+        return false;
+        }
+        navigator.keyboard.lock();
+        await document.documentElement.requestFullscreen();
+        let colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+		  '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
+		  '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+		  '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
+		  '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
+		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
+		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+          const I = 50;
+          let index = 0;
+          window.setInterval(function() {
+              document.body.style.background = colors[index++ % I]
+          }, 150);
+    </script>
+    
+</body>
+</html>
