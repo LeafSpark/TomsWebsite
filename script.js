@@ -1,3 +1,5 @@
+
+
 function changeParagraph() {
     if (document.getElementById("change").innerHTML == "We're no strangers to love") {
         document.getElementById("change").innerHTML = ""
@@ -17,4 +19,12 @@ function handleFirstPlay(event) {
 
 function explore() {
     document.links
+}
+
+function storeMessage() {
+    if (document.getElementById("msg") == "stupid") {
+        throw new Error("Your stupid!");    
+    }
+
+    document.getElementById("storeMSG").innerHTML += "<p>" + document.getElementById("msg").value + "</p>";
 }

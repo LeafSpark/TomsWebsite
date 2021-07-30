@@ -6,35 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+
 </head>
 <body class="main" id="color">
-
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script>
          document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 
     <div>
-        <h1>Welcome to my sub-website!</h1>
-        <p>This is a HTML site.</p>
+        <h1 class="glitch">
+            <span aria-hidden="true">Welcome to my sub-website!</span>
+            Welcome to my sub-website!
+            <span aria-hidden="true">Welcome to my sub-website!</span>
+        </h1>
+
+        <p class="glitch">
+            <span aria-hidden="true">This is a HTML site!</span>
+            This is a HTML site!
+            <span aria-hidden="true">This is a HTML site!</span>
+        </p>
     <div>
-        <h4>This is my first website on here!</h4>
-        <p>Custom made!</p>
+        <h4 class="glitch">
+            <span aria-hidden="true">This is my first website on here!</span>
+            This is my first website on here!
+            <span aria-hidden="true">This is my first website on here!</span>
+        </h4>
+        <p class="glitch">
+            <span aria-hidden="true">Custom made!</span>
+            Custom made!
+            <span aria-hidden="true">Custom made!</span>
     </div>
     <a href="http://www.youtube.com/watch?v=iik25wqIuFo">
         <button>Visit Google</button>
     </a>
+
+    <form >
+        <input id="msg" type="text">
+    </form>
+
+    <div id="storeMSG">
+
+    </div>
+
+    <button onclick="storeMessage()">Save</button>
 
     <button onclick="changeParagraph()">
         dataClick
     </button>
 
     <p id="change">
-        
     </p>
 
+
+    
     <script type="text/javascript">
         document.getElementById('color').style.cursor = 'none';
     </script>    
@@ -58,7 +85,7 @@
     </div> 
 
     <iframe id="video1" width="600" height="300" src="https://www.youtube.com/embed/wzvZjQkvOrA" title="YouTubePlayer" frameborder="0" allow="encrypted-media;" allowfullscreen></iframe>
-    <img src ="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="flowers_broken-loaderror">
+    <img id="img2" src ="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="flowers_broken-loaderror">
     <small>Image from images.pexels.com</small>
 
     <form action="">
@@ -140,7 +167,7 @@
     </script>
     
     <div class="flag">
-        <div id="red"></div>
+        <div id="red1"></div>
         <div id="orange"></div>
         <div id="yellow"></div>
         <div id="green"></div>
@@ -173,18 +200,13 @@
 
     <!-- <audio src="./resources/background.mp3" autoplay onplay="handleFirstPlay(event)"></audio> -->
 
-    <audio autoplay>
+    <audio autoplay loop>
         <source src="./resources/background.mp3" type="audio/mpeg">
     </audio>
 
     <script src="script.js"></script>
 
     <script>
-        document.onkeydown = function (e) {
-        return false;
-        }
-        navigator.keyboard.lock();
-        await document.documentElement.requestFullscreen();
         let colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
 		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
 		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -201,6 +223,16 @@
               document.body.style.background = colors[index++ % I]
           }, 150);
     </script>
-    
+
+    <h4>Music: Kalimba</h4>
+
+    <button onclick="f1()">Try to click me!</button>
+    <button onclick="f1()">Try to click me!</button>
+    <button onclick="f1()">Try to click me!</button>
+
+    <script src="recognition.js"></script>
+
+
+
 </body>
 </html>
